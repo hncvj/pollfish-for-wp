@@ -6,14 +6,14 @@
  * The plugin enables you to add PollFish Surveys to your wordpress website.
  *
  * @link              https://www.upwork.com/fl/hncvj
- * @since             1.0.0
+ * @since             1.2.0
  * @package           Pollfish_For_Wordpress
  *
  * @wordpress-plugin
  * Plugin Name:       Pollfish for Wordpress
  * Plugin URI:        https://spanrig.com
  * Description:       The plugin enables you to add PollFish Surveys to your wordpress website.
- * Version:           1.0.0
+ * Version:           1.2.0
  * Author:            Spanrig Technologies
  * Author URI:        https://www.upwork.com/fl/hncvj
  * License:           GPL-2.0+
@@ -31,7 +31,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Currently plugin version.
  * Start at version 1.0.0
  */
-define( 'Pollfish_For_Wordpress_VERSION', '1.0.0' );
+define( 'Pollfish_For_Wordpress_VERSION', '1.2.0' );
 
 /**
  * The code that runs during plugin activation.

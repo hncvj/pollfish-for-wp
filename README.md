@@ -77,5 +77,8 @@ MIT
 
 
 ## Changelog
+** 1.1
+* Fixed page selection dropdown issue.
 
+** 1.0
 * Initial Release.

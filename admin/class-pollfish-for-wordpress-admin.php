@@ -499,9 +499,14 @@ class Pollfish_For_Wordpress_Admin {
 		echo '<select style="min-height:400px;" multiple="multiple" name="Pollfish_For_Wordpress_option_name[page_landing_trigger][]" id="page_landing_trigger">';
 			$pages = get_pages(); 
 			foreach ( $pages as $page ) {
-				$selected = in_array( $page->ID, $this->Pollfish_For_Wordpress_options['page_landing_trigger'] ) ? ' selected="selected" ' : '';
+				$selected = '';
+				if (is_array($this->Pollfish_For_Wordpress_options['page_landing_trigger']) && !is_null($this->Pollfish_For_Wordpress_options['page_landing_trigger'])) {
+					$selected = in_array( $page->ID, $this->Pollfish_For_Wordpress_options['page_landing_trigger'] ) ? ' selected="selected" ' : '';
+				}
 				echo '<option value="' .$page->ID. '" '.$selected.'>'.$page->post_title.'</option>';
+				
 			}
+			
 		echo '</select>';
 	}
 
